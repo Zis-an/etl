@@ -47,7 +47,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return view('auth.login');
 });
 
 
@@ -56,10 +57,10 @@ Route::middleware('auth')->group(callback: function () {
     Route::get('/unauthorized-action', [AdminDashboardController::class, 'unauthorized'])->name('unauthorized.action');
 
     //Team Section
-    Route::get('/team-section', [TeamController::class, 'index'])->name('team.section');
-    Route::post('/team-store', [TeamController::class, 'store'])->name('team.store');
-    Route::put('/team-update/{id}', [TeamController::class, 'update'])->name('team.update');
-    Route::get('/team-delete/{id}', [TeamController::class, 'destroy'])->name('team.destroy');
+    // Route::get('/team-section', [TeamController::class, 'index'])->name('team.section');
+    // Route::post('/team-store', [TeamController::class, 'store'])->name('team.store');
+    // Route::put('/team-update/{id}', [TeamController::class, 'update'])->name('team.update');
+    // Route::get('/team-delete/{id}', [TeamController::class, 'destroy'])->name('team.destroy');
 
     //Category Section
     Route::get('/category-section', [CategoryController::class, 'index'])->name('category.section');

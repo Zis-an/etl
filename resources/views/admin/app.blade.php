@@ -110,13 +110,13 @@
                         <span class="menu-arrow"></span>
                     </a>
                     <div class="collapse" id="sidebarPages">
-                        {{-- <ul class="side-nav-second-level">
+                        <ul class="side-nav-second-level">
                             @can('team-list')
                             <li>
                                 <a href="{{route('team.section')}}">Team</a>
                             </li>
                             @endcan
-                        </ul> --}}
+                        </ul>
                         <ul class="side-nav-second-level">
                             @can('category-list')
                                 <li>
@@ -128,14 +128,14 @@
                 </li>
                 @endcan
 
-                {{-- @can('site-setting')
+                @can('site-setting')
                     <li class="side-nav-item">
                         <a href="{{route('site.setting')}}" class="side-nav-link">
                             <i class="ri-drag-move-fill"></i>
                             <span> Site Setting </span>
                         </a>
                     </li>
-                @endcan --}}
+                @endcan
 
 
                 @can('role-and-permission-list')
